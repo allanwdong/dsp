@@ -18,23 +18,36 @@ Here's a list of items with which you should be familiar:
 * copying a file from one directory to another
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
+pwd:  show current working directory path
+mkdir: creating a directory
+rm: deletes file
+rm -r: deletes directory and everything inside it (CAN NOT UNDO)
+cd: change directory
+cd ..: go up to previous directory
+ls: list files in directory
+ls -a: list files + hidden files in directory
+ls -l: list all content in long format
+ls -t: order files and directories by time they were last modified
+[can use order such as 'ls -alt' and system will recognize]
+touch: create file
+cp [a] [b] [c]: copies contents of [a] and [b] into [c]
+mv [a] [b] [c]: movies files [a] and [b] into [c]
+mv [a] [b]: changes name of file [a] to file [b] (technically moves file [a] into argument [b])
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+`ls`  - list files/directories in directory
+`ls -a`  - list everything in directory, including hidden files
+`ls -l`  - list long format of files/directories in directory
+`ls -lh`  - list long format of files/directories in directory, with readable file size units
+`ls -lah` - list long format of all files/directories in directory, with readablefile size units
+`ls -t`  - list files/directories in directory ordered by time, newest first
+`ls -Glp`  - list long format of files/directories, with directories ended with '/' symbol, with files and directories differently colored
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
@@ -42,15 +55,18 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
----
+`ls -G` - differentiate btw files and directories easily by coloring the names differently
+`ls -lh`  - list long format of files/directories in directory, with readable file size units
+`ls -R` - list recursive directory tree
+`ls -S` - sorts list by file size
+`ls -t` - sorts list by date modified, newest first
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`xargs` is used to add the output of ther standard inout to the end of the second command.
 
+`find ~/ds/metis/metis/metisgh/ -name "prework" | rm "dsp"`
  
 
