@@ -81,14 +81,13 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Vim. The cursor doesn't overwrite like vi does, it seems powerful enough, most importanty, I prefer how the hotkeys for vim are arranged as opposed to emacs and nano doesn't seem powerful enough. 
 --
 
 ### Q3. Graphical Editor
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will be using either Spyder or Rodeo for my graphical editor. I am used to Spyder - I have been using it for the past year. However, I find the specialized use of Rodeo to be attractive for datascience use as I have yet to find a way to display graphs in Spyder in a separate window  along with my text editor and iPython. Spyder has iPython built into it, so you can test your code in short pieces before copying to your master file, or even import other scripts you've written previously, and it has a variable explorer window. I am unsure of very many useful keyboard shortcuts, I normally just save, undo, and switch windows with cmd-s, cmd-z, and cmd-tab respectively. I am unsure how to customize spyder much as many options are right there and only require switching between the various panels.
 
- 
+	
