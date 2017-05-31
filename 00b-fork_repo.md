@@ -68,5 +68,5 @@ Here's your first chance to practice this:
 
 What is your favorite emoji?  (Check out this [emoji cheat sheet](http://www.emoji-cheat-sheet.com/).)
 
-My Favorite emoji is :trollface:. I can't believe someone added this
+My Favorite emoji is :trollface:.
 
