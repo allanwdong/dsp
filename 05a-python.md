@@ -28,7 +28,11 @@ Lists and sets are similar in that the both are collections of elements. However
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lambdas are used to make small unnamed functions, usually as support for another, larger function.
+
+In the `sorted` function, the `key` argument is the function applied to the list element by which it will be sorted. Using a lambda in the `key` argument allows one to designate a function without needing to write it separately and refer back to it.
+
+ex. sorted([-1, 3, 5, 6, 7], key=lambda x: x ** 3)
 
 ---
 
@@ -36,7 +40,21 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehensions are a compact method to generate lists in one statement as opposed to requiring a multiple lined function.
+The same technique can generate sets and dictionaries as well.
+
+`filter` is used as a function that returns a list of items for which an applied function returns `True`.  `map` is used as a method to apply a function to an iterable (like a list), or multiple iterables simultaneously.
+
+ex.
+lst = [x*5 for x in range(0, 10)]
+dct = {x : x*5 for x in range(0, 10)}
+set_ex = (x for x in [EnglishAlphabet] if x not in 'hello world')
+
+
+list(filter(lambda x: x%2 == 0, [x**2 for x in range(0, 10)]))
+list(map(lambda x: x%3 == 0, [x for x in range(0, 30)]))
+
+
 
 ---
 
